@@ -1,38 +1,97 @@
-.App {
+.container{
+  max-width: 400px;
+  min-height:  450px;
+  margin: 0 auto;
+  background: rgb(255,255,255);
+background: linear-gradient(239deg, rgba(255,255,255,1) 14%, rgba(14,63,96,1) 66%);
+  box-shadow: 0 0 10px gray;
+  margin-top: 50px;
+  padding: 15px 50px;
+  border-radius: 5px;
+}
+
+.text-center{
   text-align: center;
-}
+  color: darkblue;
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: gray 1px 4px;
+  text-transform: uppercase;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.your{
+  font-size: 25px;
+  text-transform: uppercase;
+  color:  lawngreen;
+  font-family: cursive;
+  
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inc{
+  color: green;
+  font-size: 25px;
+  font-family: cursive;
+}
+.exp{
+  font-family: cursive;
+  font-size: 25px;
+  color: red;
+}
+.his{
+  color: whitesmoke;
+  font-family: cursive;
+  font-size: 20px;
+}
+.add{
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: cursive;
+}
+label{
+  color: red;
+  font-size: 20px;
+  font-family: cursive;
+  
+}
+input{
+  background-color: whitesmoke;
+}
+.expense-tracker{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ border-radius: 4px;
+  justify-content: space-around;
+  background-color: skyblue;
+  box-shadow: 0 0 10px gray;
 }
-
-.App-link {
-  color: #61dafb;
+.transaction-form input{
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 0px;
+  border-radius: 2px;
 }
+.trans_history{
+  margin: 0;
+  padding: 0;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.trans_history > li{
+  color: darkblue;
+  font-weight: bold;
+  font-family: cursive;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px gray;
+  padding: 5px 8px;
+  margin: 5px 5px;
+  background-color: lightsteelblue;
+
   }
-  to {
-    transform: rotate(360deg);
-  }
+input ,value{
+  color:blue;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: cursive;
+}
+.inp:hover{
+  cursor: pointer;
 }
